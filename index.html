@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Bootstrap Header</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Outfit Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="custom-header">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+
+      <!-- Logo -->
+      <a href="#" class="navbar-brand">
+        <img src="./photos/nexBrok logo.png" alt="Logo" class="logo-img">
+      </a>
+
+      <!-- Hamburger for mobile -->
+      <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Desktop Nav -->
+      <nav class="d-none d-lg-flex align-items-center gap-4">
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Rewards</a>
+        <a href="#" class="nav-link">How it Works</a>
+        <a href="#" class="nav-link">FAQ</a>
+        <a href="#" class="nav-link">Contact Us</a>
+        <a href="#" class="btn join-btn">Join Now</a>
+      </nav>
+    </div>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column align-items-start gap-3">
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Rewards</a>
+        <a href="#" class="nav-link">How it Works</a>
+        <a href="#" class="nav-link">FAQ</a>
+        <a href="#" class="nav-link">Contact Us</a>
+        <a href="#" class="btn join-btn w-100">Join Now</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Banner Section -->
+  <section class="hero-banner">
+    <!-- Decorative floating balls -->
+    <span class="ball ball1"></span>
+    <span class="ball ball2"></span>
+    <span class="ball ball3"></span>
+    <span class="ball ball4"></span>
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Text Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2 class="hero-title">The Buzzing Hub for Real Estate Pros</h2>
+          <p class="hero-subtitle">Built exclusively for verified agents to grow their network and income.</p>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-4">
+            <a href="#" class="btn sign-up-btn">Sign Up</a>
+            <a href="#" class="btn get-app-btn">Get the App</a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="./photos/two-mobile.png" alt="Banner Image" class="hero-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Choose Section -->
+  <section class="choose-section">
+    <div class="container text-center">
+      <!-- Heading -->
+      <h2 class="choose-heading">
+        Why Top Agents Choose<br>
+        <span class="gradient-text">NexBroker</span>
+      </h2>
+
+      <!-- SVG Diagram -->
+      <div class="diagram-wrap">
+        <svg width="100%" height="500" viewBox="0 0 900 400" class="diagram-svg">
+
+          <!-- Center Logo Ripple -->
+          <!-- Center Logo Ripple (more spread, softer) -->
+          <circle cx="450" cy="160" r="80" fill="#8B5CF666">
+            <animate attributeName="r" values="80; 130; 80" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.3; 0; 0.3" dur="3s" repeatCount="indefinite" />
+          </circle>
+
+
+          <!-- Center Logo -->
+          <image href="./photos/svg-logo.png" x="200" y="-45" width="500" height="500" class="logo-img1" />
+
+          <!-- Top Left Ripple -->
+          <circle cx="95" cy="85" r="50" fill="#8B5CF666">
+            <animate attributeName="r" values="50; 70; 50" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4; 0; 0.4" dur="2s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Top Left Line & Icon -->
+          <path d="M 60 100 H 200 V 190 H 345" stroke="#8B5CF6" stroke-width="2" fill="none" />
+          <image href="./photos/icon1.png" x="20" y="10" width="150" height="150" class="icon-img" />
+          <text x="120" y="145" text-anchor="end" class="icon-label">A2A Connections</text>
+
+          <!-- Bottom Left Ripple -->
+          <circle cx="95" cy="310" r="50" fill="#8B5CF666">
+            <animate attributeName="r" values="50; 70; 50" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4; 0; 0.4" dur="2s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Bottom Left Line & Icon -->
+          <path d="M 60 320 H 200 V 220 H 345" stroke="#8B5CF6" stroke-width="2" fill="none" />
+          <image href="./photos/icon2.png" x="20" y="235" width="150" height="150" class="icon-img" />
+          <text x="130" y="265" text-anchor="end" class="icon-label">Your Trusted Circle</text>
+
+          <!-- Top Right Ripple -->
+          <circle cx="800" cy="85" r="50" fill="#8B5CF666">
+            <animate attributeName="r" values="50; 70; 50" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4; 0; 0.4" dur="2s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Top Right Line & Icon -->
+          <path d="M 775 100 H 700 V 190 H 555" stroke="#8B5CF6" stroke-width="2" fill="none" />
+          <image href="./photos/icon3.png" x="730" y="10" width="150" height="150" class="icon-img" />
+          <text x="760" y="145" text-anchor="start" class="icon-label">Smart Promotions</text>
+
+          <!-- Bottom Right Ripple -->
+          <circle cx="800" cy="310" r="50" fill="#8B5CF666">
+            <animate attributeName="r" values="50; 70; 50" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4; 0; 0.4" dur="2s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Bottom Right Line & Icon -->
+          <path d="M 775 310 H 700 V 220 H 555" stroke="#8B5CF6" stroke-width="2" fill="none" />
+          <image href="./photos/icon4.png" x="730" y="235" width="150" height="150" class="icon-img" />
+          <text x="760" y="265" text-anchor="start" class="icon-label">No Spam, No Noise</text>
+
+        </svg>
+      </div>
+
+      <!-- Join Now Button -->
+      <a href="#" class="btn join-btn1">Join Now</a>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="tools-section py-5">
+    <div class="container text-center">
+      <h2 class="tools-heading">
+        <span>Powerful Tools to Grow Your</span><br>
+        <span class="gradient-text">Real Estate Business</span>
+      </h2>
+
+      <div class="row mt-5 g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tool-card p-3 text-start">
+            <img src="./photos/icon1.1.png" alt="Tool 1" class="tool-icon mb-3">
+            <h4>Instant Agent Matching</h4>
+            <p>Find brokers by location, listing type, or reputation</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tool-card p-3 text-start">
+            <img src="./photos/icon1.2.png" alt="Tool 2" class="tool-icon mb-3">
+            <h4>Secure Chat</h4>
+            <p>Communicate with verified profiles inside the app</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tool-card p-3 text-start">
+            <img src="./photos/icon1.3.png" alt="Tool 3" class="tool-icon mb-3">
+            <h4>Verified Listings</h4>
+            <p>No spam. No fraud. Just quality leads</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tool-card p-3 text-start">
+            <img src="./photos/icon1.4.png" alt="Tool 4" class="tool-icon mb-3">
+            <h4>Smart CRM & Activity Tracker</h4>
+            <p>Know who’s viewed, chatted, or engaged with your listings</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="join-btn mt-5">Join Now</button>
+    </div>
+  </section>
+
+  <section class="rewards-section py-5">
+    <div class="container text-center">
+      <h2 class="rewards-heading mb-5">
+        <span class="text-dark">Earn</span>
+        <span class="gradient-text"> Recognition <span class="text-dark">&</span> <br> Rewards </span>
+        <span class="text-dark">as You Work</span>
+      </h2>
+
+      <div class="row g-4">
+        <!-- Top Row Card 1 -->
+        <div class="col-lg-6 col-md-6 col-12">
+          <div
+            class="reward-card white-card fade-card d-flex flex-md-row flex-column justify-content-between align-items-center">
+            <div>
+              <h4>Leaderboards <br> & Monthly Achievers</h4>
+              <p>Shine as a top closer and win perks</p>
+            </div>
+            <img src="./photos/Trophy 1.png" alt="Trophy Icon" class="reward-img mt-3 mt-md-0">
+          </div>
+        </div>
+
+        <!-- Top Row Card 2 -->
+        <div class="col-lg-6 col-md-6 col-12">
+          <div
+            class="reward-card white-card fade-card d-flex flex-md-row flex-column justify-content-between align-items-center">
+            <div>
+              <h4>Knowledge is <br> Currency</h4>
+              <p>Share tips and unlock engagement bonuses</p>
+            </div>
+            <img src="./photos/feedback 1.png" alt="Feedback Icon" class="reward-img mt-3 mt-md-0">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <!-- Bottom Card 1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="reward-card white-card fade-card d-flex flex-column position-relative">
+            <div>
+              <h4>Points That Convert</h4>
+              <p>Redeem DB Coins for listing boosts or cash equivalents</p>
+            </div>
+            <img src="./photos/cOINS 1.png" alt="Coins Icon" class="reward-img-bottom mt-3">
+          </div>
+        </div>
+
+        <!-- Bottom Card 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="reward-card purple-card fade-card d-flex flex-column position-relative text-end text-white">
+            <div>
+              <h4>Daily Missions</h4>
+              <p>Complete simple tasks to earn more.</p>
+            </div>
+            <img src="./photos/cOMMISIONS 1.png" alt="Missions Icon" class="reward-img-bottom left mt-3">
+          </div>
+        </div>
+
+        <!-- Bottom Card 3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="reward-card white-card fade-card d-flex flex-column position-relative">
+            <div>
+              <h4>Refer & Earn</h4>
+              <p>Invite other brokers and get 3–5% commission</p>
+            </div>
+            <img src="./photos/Refer 1.png" alt="Refer Icon" class="reward-img-bottom mt-3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Join Now for Reward Button -->
+      <button class="reward-btn mt-5">
+        <span>Join Now for Reward</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="brokers-section py-5">
+    <div class="container text-center">
+      <h2 class="brokers-heading mb-3">
+        <span class="text-dark">Built for Brokers.</span><br>
+        <span class="gradient-text">Designed to Perform.</span>
+      </h2>
+      <p class="brokers-subtext mb-4">
+        Maximize your network, earnings, and opportunities through a platform made for modern real estate professionals.
+      </p>
+
+      <img src="./photos/3mob-frame.png" alt="Platform Preview" class="brokers-image mb-4"><br>
+
+      <button class="brokers-btn">Get Started Now</button>
+    </div>
+  </section>
+
+  <section class="getting-started-section py-5">
+    <div class="container text-center">
+      <h2 class="getting-heading mb-5">
+        Getting Started is <span class="gradient-text">Easy</span>
+      </h2>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="start-card p-4 text-center h-100">
+            <img src="./photos/sign up.png" alt="Step 1" class="start-icon mb-3">
+            <h4>Sign Up</h4>
+            <p>Get verified as a professional broker</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="start-card p-4 text-center h-100">
+            <img src="./photos/profile.png" alt="Step 2" class="start-icon mb-3">
+            <h4>Build Your Profile</h4>
+            <p>Showcase listings & credentials</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="start-card p-4 text-center h-100">
+            <img src="./photos/details.png" alt="Step 3" class="start-icon mb-3">
+            <h4>Showcase listings & credentials</h4>
+            <p>Connect, chat, and collaborate securely</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="start-btn mt-5">Join Now</button>
+    </div>
+  </section>
+
+  <section class="faq-section py-5">
+    <div class="container text-center">
+      <h2 class="faq-heading mb-5">
+        <span class="text-dark">Have Questions?</span><br>
+        <span class="gradient-text">We’ve Got Answers.</span>
+      </h2>
+
+      <div id="faqContainer">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Who can join NexBroker?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Only verified real estate brokers and agents can join. We manually approve every profile to ensure the
+            network remains professional and trusted.
+          </div>
+        </div>
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Is NexBroker free to use?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes — it’s absolutely free for brokers and agents.
+          </div>
+        </div>
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>What are A2A deals?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            A2A stands for Agent to Agent deals within our closed verified network.
+          </div>
+        </div>
+
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>How do I earn rewards?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Complete deals, invite brokers, and participate in campaigns.
+          </div>
+        </div>
+
+        <!-- Hidden by default -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I invite brokers from other cities?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, you can invite brokers across multiple cities.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a mobile app available?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes — download our Android and iOS apps for better accessibility.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What makes NexBroker different?</span>
+            <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            It’s a professional, verified agent-only network offering exclusive A2A deals and rewards.
+          </div>
+        </div>
+      </div>
+
+      <button id="loadMoreBtn" class="faq-btn mt-4">View All Questions</button>
+    </div>
+  </section>
+
+  <!-- CTA Section (floating above footer) -->
+  <section class="cta-section text-center">
+    <div class="cta-bg">
+      <div class="floating-ball ball1"></div>
+      <div class="floating-ball ball2"></div>
+      <div class="floating-ball ball3"></div>
+      <div class="floating-ball ball4"></div>
+      <div class="floating-ball ball5"></div>
+      <canvas id="techCanvas"></canvas>
+    </div>
+
+    <div class="container position-relative cta-content-wrap py-5">
+      <h2 class="cta-heading text-white">Join the Future of Real Estate Networking</h2>
+      <p class="cta-subtext">NexBroker is for serious professionals who want to close smarter, faster.</p>
+      <button class="cta-btn">Start Free – No Hidden Fees</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section text-white py-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Newsletter & Logo -->
+        <div class="col-lg-4">
+          <img src="./photos/foot-logo.png" alt="NexBroker Logo" class="mb-3" style="max-width: 300px;">
+          <p class="footer-desc mb-4">NexBroker is a global platform connecting verified real estate professionals for
+            smarter, faster, and more secure deal-making. Built for brokers, by brokers.</p>
+
+          <form class="d-flex subscribe-form">
+            <input type="email" class="form-control me-2" placeholder="Enter Your Email">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="col-lg-2">
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2">
+          <h6 class="footer-heading mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="col-lg-2">
+          <h6 class="footer-heading mb-3">Legal Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+          </ul>
+        </div>
+
+        <!-- Get The App -->
+        <div class="col-lg-2">
+          <h6 class="footer-heading mb-3">Get the app!</h6>
+          <div class="app-badges">
+            <ul class="list-unstyled footer-links">
+              <li>
+                <img src="./photos/google-play.png" alt="Google Play" class="me-2 mb-2" style="height:50px;">
+              </li>
+
+              <li>
+                <img src="./photos/apple-store.png" alt="App Store" style="height:50px;">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <hr class="footer-divider my-4">
+
+      <!-- Copyright & Social -->
+      <div
+        class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <p class="mb-2 mb-md-0 copyright-text">© 2025 NexBroker Inc. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script src="faq.js" defer></script>
+  <script src="tech-bg.js" defer></script>
+
+</body>
+
+</html>
